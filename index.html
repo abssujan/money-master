@@ -8,8 +8,65 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-      
+    <body class="bg-gray-200">
+        <h1 class="text-center mt-10  mb-10 text-gray-600 text-4xl">Money Master</h1>
+        <!-- main container -->
+      <div class=" w-11/12  mx-auto px-20 flex space-x-10">
+         <!-- left side image box -->
+         <div class="w-9/12  bg-gray-300  shadow-lg rounded-lg  ">
+           <div>
+            <img class="object-cover w-full grayscale rounded-lg" src="./image/pic-1.jpeg" alt="image">
+           </div>
+         </div>
+         <!-- right side calculate box -->
+         <div class="w-9/12  bg-gray-300 shadow-lg rounded-lg">
+            <div class="w-10/12 mx-auto">
+                <h1 class="text-center text-gray-600 text-lg font-bold mt-10">Income</h1>
+                <!-- icome -->
+                <div class="flex space-x-2 mt-5 flex justify-center">
+                    <p class="text-gray-600 font-semibold">Income:</p>
+                    <input class="outline-none bg-gray-400 px-2" type="text" value="10000">
+                </div>
+                <!-- Food -->
+                <h1 class="text-center text-gray-600 text-lg font-bold mt-10">Expenses</h1>
+                <div class="flex space-x-2 mt-5 flex justify-center">
+                    <p class="text-gray-600 font-semibold">Food:</p>
+                    <input class="outline-none bg-gray-400 px-2" type="text">
+                </div>
+                 <!-- Rent -->
+                 <div class="flex space-x-2 mt-5 flex justify-center">
+                     <p class="text-gray-600 font-semibold">Rent:</p>
+                     <input class="outline-none bg-gray-400 px-2" type="text">
+                 </div>
+                 <!-- Clothes -->
+                 <div class="flex space-x-2 mt-5 flex justify-center">
+                     <p class="text-gray-600 font-semibold">Clothes:</p>
+                     <input class="outline-none bg-gray-400 px-2" type="text">
+                 </div>
+                 <!-- calculate button -->
+                <div class="text-center">
+                    <button class="  text-center mt-5 text-slate-200 font-semibold text-center bg-sky-500  px-10 rounded-sm py-2">Calculate</button>
+                </div>
+                <!-- total section -->
+                <div>
+                    <h1 class="text-center font-bold text-xl text-gray-600 mt-5">Total Expenses: <span></span></h1>
+                    <h1 class=" mt-2 text-center font-bold text-xl text-gray-600">Balance: <span></span></h1>
+                </div>
+                <!-- savaing section -->
+                <div class="flex mt-5 space-x-2 items-center">
+                    <p class="text-gray-600 font-semibold">Save:</p>
+                    <input class="outline-none bg-gray-400 px-2 py-1" type="text">
+                    <p class="text-gray-600 font-semibold">%</p>
+                    <button class="text-slate-200 font-semibold text-center bg-sky-500  px-5 rounded-sm py-2">Save</button>
+                </div>
+                  <!-- Saving total section -->
+                  <div>
+                    <h1 class="text-center font-bold text-xl text-gray-600 mt-5">Saving Ammount: <span></span></h1>
+                    <h1 class=" mt-2 text-center font-bold text-xl text-gray-600">Reaming Balance: <span></span></h1>
+                </div>
+            </div>
+         </div>
+      </div>
 
         <script src="./js/utitlity.js" ></script>
         <script src="./js/app.js" ></script>
