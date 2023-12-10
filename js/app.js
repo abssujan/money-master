@@ -6,7 +6,7 @@ document.getElementById('calculate-btn').addEventListener('click', function() {
 
     // Check if any of the expenses are NaN before calculating the total
     if (!isNaN(foodExpenses) && !isNaN(rentExpenses) && !isNaN(clothesExpenses)) {
-        const myIncome = expenseFieldId('income');
+        const myIncome = cloneExpenseFieldId('income');
 
         // Check if the total expenses exceed the income
         if (foodExpenses > myIncome || rentExpenses > myIncome || clothesExpenses > myIncome) {

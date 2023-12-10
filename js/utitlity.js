@@ -7,6 +7,14 @@ function expenseFieldId(elementId) {
     expenseInputField.value = ''; // Clear the input field for the next input
     return expenseInputNumber;
 }
+// clone for issue with income 
+function cloneExpenseFieldId(elementId) {
+    const expenseInputField = document.getElementById(elementId);
+
+    const expenseInputString = expenseInputField.value;
+    const expenseInputNumber = parseInt(expenseInputString);
+    return expenseInputNumber;
+}
 
 // Function to set the text value of an element
 function setValue(elementId, value) {
